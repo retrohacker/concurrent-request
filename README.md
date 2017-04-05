@@ -3,21 +3,21 @@ Simple [request](https://github.com/request/request) pooling with backoff strate
 
 ![logo](./.github/logo.png)
 
-[![Build Status](https://travis-ci.org/retrohacker/request-pool.png?branch=master)](https://travis-ci.org/retrohacker/request-pool)
-![](https://img.shields.io/github/issues/retrohacker/request-pool.svg)
-![](https://img.shields.io/npm/dm/request-pool.svg)
-![](https://img.shields.io/npm/dt/request-pool.svg)
-![](https://img.shields.io/npm/v/request-pool.svg)
-![](https://img.shields.io/npm/l/request-pool.svg)
-![](https://img.shields.io/twitter/url/https/github.com/retrohacker/request-pool.svg?style=social)
+[![Build Status](https://travis-ci.org/retrohacker/concurrent-request.png?branch=master)](https://travis-ci.org/retrohacker/concurrent-request)
+![](https://img.shields.io/github/issues/retrohacker/concurrent-request.svg)
+![](https://img.shields.io/npm/dm/concurrent-request.svg)
+![](https://img.shields.io/npm/dt/concurrent-request.svg)
+![](https://img.shields.io/npm/v/concurrent-request.svg)
+![](https://img.shields.io/npm/l/concurrent-request.svg)
+![](https://img.shields.io/twitter/url/https/github.com/retrohacker/concurrent-request.svg?style=social)
 
-[![NPM](https://nodei.co/npm/request-pool.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request-pool/)
-[![NPM](https://nodei.co/npm-dl/request-pool.png?months=9&height=3)](https://nodei.co/npm/request-pool/)
+[![NPM](https://nodei.co/npm/concurrent-request.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/concurrent-request/)
+[![NPM](https://nodei.co/npm-dl/concurrent-request.png?months=9&height=3)](https://nodei.co/npm/concurrent-request/)
 
 ## Usage
 
 ```js
-const Pool = require('request-pool')
+const Pool = require('concurrent-request')
 const opts = {
   interval: (count) => Math.pow(2, count) * 1000, // exponentional backoff
   jitter: 1000, // 1 second range of jitter (+/- .5 seconds)
