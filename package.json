@@ -1,7 +1,7 @@
 {
   "name": "concurrent-request",
   "description": "![logo](./.github/logo.png)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=text --reporter=html tape test/*.js",
