@@ -1,3 +1,5 @@
+'use strict';
+
 const test = require('tape');
 const spdx = require('spdx');
 const pkg = require('../package.json');
@@ -69,7 +71,10 @@ test('Handles retry logic', (t) => {
   });
 
   function isDone() {
-    if (called.reduce((p, v) => p + v, 0) === 5) {
+    const count = called.reduce((p, v) => p + v, 0);
+    if (count > 5) {
+      t.fail('Called functions too many times');
+    } else if (count === 5 && done === false) {
       done = true;
       t.end();
     }
