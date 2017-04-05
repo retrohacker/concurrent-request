@@ -72,3 +72,4 @@ When invoked, this function will queue the request. When the number of concurren
 Once the request has either failed `tries` times or completed, `callback` will be invoked. If the request failed, `e` will be an array of all errors returned by the handler. Otherwise `resp` and `body` will be the same as you would get from the [`request`](https://github.com/request/request) library.
 
 > Note: we do not support any other way of invoking the underlying `request` object at this time. Streams are not supported.
+
