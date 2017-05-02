@@ -1,4 +1,6 @@
 # Concurrent Request
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/retrohacker/concurrent-request.svg)](https://greenkeeper.io/)
 Simple [request](https://github.com/request/request) pooling with backoff strategies and jitter.
 
 ![logo](./.github/logo.png)
